@@ -38,7 +38,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var voteAverage: UISegmentedControl!
     
     var movies = [[String:Any]]() // creating an array of dictionaries.
     /*
@@ -88,17 +87,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    @IBAction func filtertags(_ sender: Any) {
 
-        self.movies = movies["results"] as! [[String:Any]]
-        let voteAverage = movies["vote_average"]
-        
-        if (voteAverage<3.33) {
-         print ()
-        }
-    }
     
     
     /*
